@@ -25,10 +25,10 @@ The problem is solved by using slidin window algorithm in javaScript
 
 heres a little explanation about the code:
 
-1. Initial Sum Calculation: We first calculate the sum of the first k elements and initialize maxAvg to the average of these elements.
+1. Initial Sum Calculation: We first calculate the sum of the first k elements and initialize max to the average of these elements.
 
 2. Sliding Window: We then slide the window across the array. For each new element added to the window, we update the current sum by subtracting the first element of the previous window and adding the new element.
 
-3. Window Expansion: For each position of the window, we expand it to consider subarrays of length greater than k and update maxAvg if a larger average is found.
+3. Window Expansion: For each position of the window, we expand it to consider subarrays of length greater than k and update max if a larger average is found.
 
 4. Return Maximum Average: Finally, after evaluating all possible subarrays, the function returns the maximum average found.
